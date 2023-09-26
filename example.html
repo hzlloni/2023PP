@@ -1,74 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+
     <style>
         body {
             display: flex;
             flex-direction: column;
             font: 100%;
-            margin: 35px;
+            margin: 170px;
             line-height: 25px;
             align-items: center;
             text-align: left;
         }
-
-        .content {
+        h1{
+            margin-top: 40px;
+            font-weight: normal;
+        }
+        .remember-container {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            margin-right: 5px;
+            margin-top: 7px;
         }
 
-        .header {
+        .remember-label {
+            margin-left: 5px;
+        }
+
+        .input {
+            width: 290px;
+            height: 37px;
+            font-size: 16px;
+        }
+
+        .box {
+            background-color: rgb(51, 130, 248);
+            color: white;
+            width: 290px;
+            height: 45px;
+            border-radius: 8px;
+            border-color: rgb(51, 130, 248);
+        }
+
+        h3{
+            margin-top: 10px;
+            font-weight: 100;
             font-size: 20px;
         }
-
-        .text {
-            font-size: 17px;
-            font-weight: middle;
-        }
-
-        .highlight {
-            color: rgb(57, 78, 234);
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 6%;
-            background-color: #f0f0f0;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .footer-content {
-            
-            font-weight: 450;
-            color: rgb(93, 91, 91);
-        }
     </style>
+
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
-            <h1>Sticky footer</h1>
-        </div>
-        <div class="text">
-            Pin a footer to the bottom of the viewport in desktop browsers with this<br> custom HTML and CSS.
-            <br><br> Use <span class="highlight">the sticky footer with a fixed navbar</span> if need be, too.
-        </div>
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1>Please sign in</h1>
+    <input class="input" type="text" id="email" name="email" placeholder="Email address">
+    <input class="input" type="password" id="password" name="password" placeholder="Password">
+    <div class="remember-container">
+        <input class="remember" type="checkbox" name="Remember" value="Remember">
+        <label class="remember-label">Remember me</label>
+    </div>
+    <br><button class="box" type="submit" value="Sign in"><h3>Sign in</h3></button>
+    <br><br>© 2017-2022
 
 </body>
-<footer class="footer-content">
-    <p>
-        Place sticky footer content here.</p>
-</footer>
-</div>
 
 </html>
