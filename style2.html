@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -124,14 +122,14 @@
                 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
                     change the layout of this page by selecting different stylesheets in the menu, or by selecting one
                     of the following links:<br>
-                    <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-                    <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
-                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-                    <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+                    <a href="style1.thml">Stylesheet1</a>,
+                    <a href="style2.html">Stylesheet2</a>,
+                    <a href="#">Stylesheet3</a>,
+                    <a href="#">Stylesheet4</a>.
                 </p>
                 <h2> <a href="#" onclick="reStyle(4);return false">No Styles</a></h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the
-                    page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No
+                    page looks like with no stylesheet:<br><a href="nostyle.html">No
                         Stylesheet</a>.</p>
             </div>
             <div id="sidebar">
@@ -140,7 +138,6 @@
                     laoreet dolore magna aliquam erat volutpat.</p>
             </div>
         </div>
-
 
         <div id="bottom">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -151,10 +148,8 @@
             nulla facilisi.
         </div>
     </div>
-
     <script>
         function reStyle(styleNumber) {
-            // 각 스타일에 해당하는 페이지로 리디렉션
             switch (styleNumber) {
                 case 0:
                     window.location.href = 'style1.html';
